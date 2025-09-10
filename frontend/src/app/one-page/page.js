@@ -143,7 +143,7 @@ export default function PaymentPage() {
       
       const checkout = window.UnivapayCheckout.create({
         appId: appConfig.app_token,
-        checkout: 'token',
+        checkout: 'payment', // token or payment
         tokenType: 'one_time',
         cvvAuthorize: true,
         redirect: RETURN_URL || undefined,
