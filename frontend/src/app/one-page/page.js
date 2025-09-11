@@ -148,6 +148,9 @@ export default function PaymentPage() {
         cvvAuthorize: true,
         redirect: RETURN_URL || undefined,
         paymentMethods: ['card'],
+        
+        amount: amt,
+        currency: 'JPY',
 
         onTokenCreated: async (token) => {
           try {
